@@ -16,9 +16,9 @@ def portfolio_cost(filename):
                 print(f'Row {rowno}: Couldn\'t Convert: {row}')
     return total_cost;'''
     portfolio = read_portfolio(filename)
-    for row in portfolio:
-        total_cost += row.shares*row.price
-    return total_cost
+    '''for row in portfolio:
+        total_cost += row.shares*row.price'''
+    return portfolio.total_cost
 
 '''
 if len(sys.argv) == 2:
